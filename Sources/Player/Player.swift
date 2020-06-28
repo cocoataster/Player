@@ -7,13 +7,13 @@
 
 public struct Player: Codable {
     
-    public let id: String
+    public let id: Int?
     public let name: String
     public let kart: Kart
     public let description: String
     
     public init(
-        id: String,
+        id: Int?,
         name: String,
         kart: Kart,
         description: String
