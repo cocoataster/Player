@@ -6,8 +6,21 @@
 //
 
 public struct Player: Codable {
-    let id: String
-    let name: String
-    let kart: Kart
-    let description: String
+    
+    public let id: String
+    public let name: String
+    public let kart: Kart
+    public let description: String
+    
+    public init(
+        id: String,
+        name: String,
+        kart: Kart,
+        description: String
+    ) {
+        self.id = id
+        self.name = name
+        self.kart = kart
+        self.description = description
+    }
 }

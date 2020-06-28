@@ -6,10 +6,23 @@
 //
 
 public struct Kart: Codable {
+    
     public let color: Color
     public let topSpeed: Int
     public let timeToTopSpeed: Double
     public let weight: Weight
+    
+    public init(
+        color: Color,
+        topSpeed: Int,
+        timeToTopSpeed: Double,
+        weight: Weight
+    ) {
+        self.color = color
+        self.topSpeed = topSpeed
+        self.timeToTopSpeed = timeToTopSpeed
+        self.weight = weight
+    }
     
     public enum Color: String, Codable {
         case red = "RED"
