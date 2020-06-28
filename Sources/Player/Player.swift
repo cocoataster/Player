@@ -7,7 +7,7 @@
 
 public struct Player: Codable {
     
-    public let id: Int?
+    public var id: Int?
     public let name: String
     public let kart: Kart
     public let description: String
