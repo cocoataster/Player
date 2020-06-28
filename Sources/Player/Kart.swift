@@ -24,18 +24,18 @@ public struct Kart: Codable {
         self.weight = weight
     }
     
-    public enum Color: String, Codable {
-        case red = "RED"
-        case green = "GREEN"
-        case pink = "PINK"
-        case blue = "BLUE"
-        case yellow = "YELLOW"
-        case purple = "PURPLE"
+    public enum Color: Int, Codable {
+        case red
+        case green
+        case pink
+        case blue
+        case yellow
+        case purple
     }
     
-    public enum Weight: String, Codable {
-        case light = "LIGHT"
-        case medium = "MEDIUM"
-        case heavy = "HEAVY"
+    public enum Weight: Int, Codable {
+        case light
+        case medium
+        case heavy
     }
 }
