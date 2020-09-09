@@ -26,11 +26,8 @@ public struct Player: Codable {
         self.kart = kart
         self.description = description
     }
-}
-
-public extension Player {
     
-    enum Team: String, Codable {
+    public enum Team: String, Codable {
         case mario = "MARIO"
         case bowser = "BOWSER"
     }
